@@ -1,0 +1,63 @@
+.TVChartContainer {
+  height: calc(100vh);
+}
+
+.flowing-button {
+  position: relative;
+  overflow: hidden;
+  min-width: auto;
+}
+
+.flowing-button .content {
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.flowing-button .flow-text {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  white-space: nowrap;
+  animation: slide linear infinite;
+  animation-play-state: paused;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes textslide {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-80%);
+  }
+}
+
+.tokenlist-body {
+  overflow-x: hidden; /* Enable horizontal scrolling if content overflows */
+  white-space: nowrap; /* Prevent content from wrapping */
+}
+
+.tokenlist {
+  display: flex; /* Display children horizontally */
+}
+
+.tokenlist.overflowed {
+  animation: textslide 20s linear infinite; /* Apply the animation */
+}
+
+.tokenlist:hover {
+  animation-play-state: paused; /* Pause animation on hover */
+}
+
+.tokenlist .top-token {
+  margin-right: 10px; /* Add spacing between tokens */
+}

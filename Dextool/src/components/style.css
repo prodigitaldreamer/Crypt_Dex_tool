@@ -1,0 +1,361 @@
+/* styles.css */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-button {
+  background: linear-gradient(135deg, #22ade2, #1482ff, #1cddd1);
+  background-size: 200% 200%;
+  animation: gradientAnimation 3s ease infinite;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+  min-width: 25vw;
+  text-align: center;
+}
+
+.header-background {
+  background-color: black;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+
+.header-justify {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-image {
+  width: 100%;
+  max-width: 300px;
+  margin-right: 10px;
+  pointer-events: none;
+}
+
+.header-logo-image {
+  width: 100%;
+  max-width: 728px;
+  margin-right: 10px;
+  pointer-events: none;
+}
+
+.gradient-button {
+  background: linear-gradient(135deg, #22ade2, #1482ff, #1cddd1);
+  background-size: 200% 200%;
+  animation: gradientAnimation 3s ease infinite;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+  min-width: 25vw;
+  text-align: center;
+}
+
+.flow-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.flow-content {
+  animation: textslide 10s linear infinite;
+  font-size: large;
+}
+
+.not-flow-content {
+  font-size: large;
+}
+
+.flowing-button {
+  position: relative;
+  overflow: hidden;
+  min-width: auto;
+}
+
+.flowing-button .content {
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.flowing-button .flow-text {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  white-space: nowrap;
+  animation: slide linear infinite;
+  animation-play-state: paused;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes textslide {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.gradient-button:hover {
+  filter: brightness(1.1);
+}
+
+.gradient-skeleton {
+  background: linear-gradient(135deg, #e7e7e7, #757575, #c9c9c9);
+  background-size: 200% 200%;
+  animation: gradientAnimation 3s ease infinite;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.tokenlist-background {
+  background-color: #191919;
+  width: 100%;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* pointer-events: none; */
+}
+
+.token-list-logo {
+  pointer-events: none;
+  width: 10vw;
+}
+
+.tokenlist-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: calc(71vw-20px);
+}
+
+.token-item {
+  display: flex;
+  font-family: "altivo";
+  color: white;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-right: 10px;
+}
+
+.dropdown-container {
+  width: 15vw;
+}
+
+.token-element {
+  margin-right: 5px;
+  font-size: large;
+}
+
+.token-element-rate {
+  margin-left: -5px;
+  font-size: small;
+}
+
+.dropdown-button {
+  border: 2px solid #00a3cc;
+  text-wrap: nowrap;
+  background-color: #191919;
+  color: white;
+  font-size: small;
+  padding: 0.6rem 0.5rem;
+  width: 100%;
+}
+
+.dropdown-button:hover {
+  cursor: pointer;
+}
+
+/* .dropdown-button:active {
+  border: 2px solid #00a3cc;
+  text-wrap: nowrap;
+  background-color: #191919;
+  color: white;
+  font-size: large;
+  padding: 0.6rem 0.5rem;
+} */
+
+.table-container {
+  border: 2px solid #00a3cc;
+}
+
+.custom-table {
+  border-collapse: collapse; /* Collapse table borders */
+  width: 100%; /* Optionally, set table width */
+}
+
+.custom-table th,
+.custom-table td {
+  border: none; /* Remove all borders */
+  padding: 8px;
+}
+
+.custom-table tr td:first-child {
+  padding-left: 60px; /* Adjust as needed */
+}
+
+.custom-table tr th:first-child {
+  padding-left: 80px; /* Adjust as needed */
+}
+
+.custom-table tr th:last-child {
+  padding-right: 80px; /* Adjust as needed */
+}
+
+.custom-table th {
+  background-color: #191919; /* Set background color for header cells */
+  color: white;
+}
+
+.custom-table td {
+  background-color: black; /* Set background color for header cells */
+}
+
+.menubutton {
+  border: 2px solid #00a3cc;
+  background-color: #191919;
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 17px;
+  right: -55px;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Altivo:wght@400;500;700&display=swap");
+
+.font-header {
+  font-family: "altivo";
+  font-weight: 500;
+}
+
+.font-regular {
+  font-family: "altivo";
+  font-weight: 400;
+}
+
+.save-tokens-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.save-tokens-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-tokens-button:hover {
+  background-color: #0056b3;
+}
+
+.save-tokens-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.success-message {
+  color: #28a745;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: #dc3545;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .save-tokens-button {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+.token-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.save-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.save-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.save-button.loading {
+  background-color: #6c757d;
+  cursor: progress;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.success {
+  color: green;
+  margin-top: 10px;
+}
