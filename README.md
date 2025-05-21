@@ -7,7 +7,7 @@ I hold no full rights to this full project but rather a technical backend (GOLAN
 - [Overview](#overview)
 - [Getting Started](#getting-started)
 
-## Overview
+## Overview 
 
 Thetascreener's primary function mirrors that of **Dexscreener**, providing users with up-to-date token prices, trading volumes, and market data across DEXs operating on the Theta blockchain. Built on an EVM-based chain, Thetascreener integrates seamlessly with the Theta network, offering a familiar yet advanced toolset for traders.
 
