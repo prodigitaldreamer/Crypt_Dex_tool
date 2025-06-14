@@ -2,7 +2,7 @@
 
 **Thetascreener** is an innovative DeFi platform built on the **Theta blockchain**, an Ethereum Virtual Machine (EVM) compatible network. This Project was given as a technical assessment but designed to enhance the Theta ecosystem by offering real-time decentralized exchange (DEX) data and tools for traders and investors. With the rising demand for decentralized finance solutions, Thetascreener aims to bring transparency, insight, and automation to the Theta blockchain community, empowering users to make informed decisions with ease.
 I hold no full rights to this full project but rather a technical backend (GOLANG/NODE JS) contributor (Technical Assessment)
-
+    
 ## Table of Contents
 - [Overview](#overview)  
 - [Getting Started](#getting-started)
